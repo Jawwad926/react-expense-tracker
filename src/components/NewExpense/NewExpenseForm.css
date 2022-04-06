@@ -1,0 +1,67 @@
+.new-expense__controls{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* .new-expense__control{
+  
+} */
+
+.new-expense__control label{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.new-expense__control input{
+  font: inherit;
+  width: 20rem;
+  max-width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+
+.new-expense__actions{
+  display: block;
+  text-align: right;
+}
+
+.centered-button{
+  display: block;
+  text-align: center;
+}
+
+ button{
+  cursor: pointer;
+  background-color: #40005d;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: 1px solid #40005d;
+  border-radius: 12px;
+  font: inherit;
+  margin-right: 1rem;
+}
+
+ button:hover,
+ button:active{
+  background-color: #510674;
+  border-color: #510674;
+}
+
+@media screen and (max-width:780px) {
+
+  .new-expense__controls{
+    align-items: center;
+    flex-direction: column;
+  }
+  .new-expense__control {
+    width: 100%;
+  }
+  .new-expense__actions{
+    text-align: center;
+  }
+}
